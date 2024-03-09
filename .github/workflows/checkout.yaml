@@ -6,7 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: check file list
-      run: cat README.md
+      run: |
+        whoami
+        pwd
+        cat../../README.md
   
   checkout: # job 이름
     runs-on: ubuntu-latest
@@ -14,4 +17,7 @@ jobs:
     - name: use checkout action # step 이름
       uses: actions/checkout@4
     - name: check file list
-      run: cat README.md
+      run: |
+        whoami
+        pwd
+        cat ../../README.md
