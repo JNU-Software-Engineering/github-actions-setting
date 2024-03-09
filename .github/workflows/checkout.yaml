@@ -8,7 +8,9 @@ jobs:
     - name: check file list
       run: |
         whoami
+        echo \n
         pwd
+        echo \n
         cat../../README.md
   
   checkout: # job 이름
