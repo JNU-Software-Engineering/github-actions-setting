@@ -10,6 +10,7 @@ jobs:
         ls -al
         whoami
         pwd
+        cd ..
         cat ../README.md
   
   checkout: # job 이름
@@ -21,4 +22,5 @@ jobs:
       run: |
         whoami
         pwd
+        cd ..
         cat ../README.md
