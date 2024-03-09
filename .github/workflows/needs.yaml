@@ -20,7 +20,7 @@ jobs:
     steps:
     - name: echo
       run:
-        echo "job2 done"
+        echo "job3 failed"
         exit 1
   
   job4:
