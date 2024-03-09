@@ -1,6 +1,6 @@
 name: needs
 on: push
- 
+
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: echo
-      run:
+      run: |
         echo "job3 failed"
         exit 1
   
