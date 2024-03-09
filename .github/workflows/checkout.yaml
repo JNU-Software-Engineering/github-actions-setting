@@ -7,10 +7,9 @@ jobs:
     steps:
     - name: check file list
       run: |
+        ls -al
         whoami
-        echo \n
         pwd
-        echo \n
         cat../../README.md
   
   checkout: # job 이름
