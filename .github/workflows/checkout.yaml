@@ -7,10 +7,10 @@ jobs:
     steps:
     - name: check file list
       run: |
+        cd ..
         ls -al
         whoami
         pwd
-        cd ..
         cat ../README.md
   
   checkout: # job 이름
@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@4
     - name: check file list
       run: |
+        cd ..
         whoami
         pwd
-        cd ..
         cat ../README.md
