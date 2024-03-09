@@ -1,0 +1,17 @@
+name: checkout
+on: workflow_dispatch
+
+jobs:
+  no-checkout:
+    runs-on: ubutu-latest
+    steps:
+    - name: check file list
+      run: cat README.md
+  
+  heckout:
+    runs-on: ubutu-latest
+    steps:
+    - name: use checkout action
+      uses: actions/checkout@4
+    - name: check file list
+      run: cat README.md
