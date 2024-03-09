@@ -7,9 +7,10 @@ jobs:
     steps:
     - name: check file list
       run: |
-        ls -al
+
         whoami
         pwd
+        ls -al
         cat README.md
   
   checkout: # job 이름
@@ -21,4 +22,5 @@ jobs:
       run: |
         whoami
         pwd
+        ls -al
         cat README.md
