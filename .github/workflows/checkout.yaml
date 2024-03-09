@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: use checkout action # step 이름
-      uses: actions/checkout@4
+      uses: actions/checkout@v4
     - name: check file list
       run: |
         whoami
