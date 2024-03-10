@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: github context
-      run: echo '${{ toJSON(github)}} '
-    
-    
+      run: echo '${{ toJSON(github)}}' # github properties 확인 가능
+    - name: check github context
+      run" |
+        echo '${{ github.repository}}'
+        echo '${{ github.event_name }}'
