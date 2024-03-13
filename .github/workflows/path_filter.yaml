@@ -2,7 +2,10 @@ name: path-filter
 on:
   push:
     paths:
-    - '.github/workflows/part1/*'
+    # workflows/part1 디렉터리 안에 있는 모든 파일이 수정되었을 때, 이 워크플로우를 실행한다는 의미
+    # 하지만, 특정 파일을 제외하고 싶다면(= 특정 파일이 수정되었을 때 워크플로우를 실행하고 싶지 않다면)
+    - '.github/workflows/part1/*' 
+    - '!.github/workflows/part1/push.yaml'
 
 jobs:
   path-filter:
