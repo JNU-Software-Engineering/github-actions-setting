@@ -1,0 +1,11 @@
+name: branch-filter
+on:
+  push:
+    branches: ["dev"] # push 이벤트일 떄 워크플로우 트리거, 하지만 dev 브랜치에 push 이벤트가 발생할 때만
+
+jobs:
+  branch-filter:
+    runs-on: ubunut-latest
+    steps:
+    - name: echo
+      run: echo hello
